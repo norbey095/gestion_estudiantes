@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>  
+        <meta charset="UTF-8">
+        <META http-equiv="x-UA-compatible" content="IE=edge">
+        <link rel="stylesheet" href="egresados.css">
+        <title>Egresados</title>    
+    </head>
+    <body>
+        <form action="./egresados.php" method="POST" name="egresados" class="form">
+            <label>
+                Numero de documento:
+                <input type="text" name="cedula" required placeholder="Numero de documento"> 
+            </label>
+            <br>
+            <br>
+            <label>
+                Nombre completo:
+                <input type="text" name="nombre" required placeholder="Nombre completo"> 
+            </label>
+            <br>
+            <br>
+            <label>
+                Año de retiro: 
+                <input type="number" name="ano_retiro" required>
+            </label>
+            <br>
+            <br>
+            <label>
+                Grados cursados:
+                <input type="number" name="ano_cursados" required>
+            </label>
+            <br>
+            <br>
+            <label>
+                Numero de contacto:
+                <input type="text" name="celular" required placeholder="Celular">
+            </label>
+            <br>
+            <br>
+            <button class="total"  type="submit"> Enviar </button>
+        </form>
+    </body>
+</html>

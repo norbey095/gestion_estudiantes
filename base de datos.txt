@@ -1,0 +1,22 @@
+drop database if exists estudiantes;
+create database estudiantes;
+use estudiantes;
+ 
+create table activos(
+codigo int not null primary key,
+nombre varchar(30) not null,
+grado varchar(30) not null,
+celular varchar(30) not null
+)engine=innodb;
+
+create table egresados(
+cedula int not null primary key,
+nombre varchar(50) not null,
+ano_retiro int not null,
+ano_cursados int not null,
+celular varchar(30) not null
+)engine=innodb;
+
+
+insert into activos values ("1010","Carlos Arturo","8","3205444443");
+insert into egresados values ("1111","Felipe Contreras",2023,10,"3205444444");
